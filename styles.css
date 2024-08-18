@@ -1,0 +1,214 @@
+/* Rimuove i margini e il padding predefiniti del browser */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Sfondo nero scuro per il tema scuro */
+    color: #E0E0E0; /* Testo grigio chiaro per il tema scuro */
+    transition: background-color 0.3s, color 0.3s; /* Transizione per cambiare il tema */
+}
+
+/* Stili per l'intestazione */
+header {
+    background-color: #1E1E1E; /* Nero leggermente più chiaro */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #00BFFF; /* Bordo blu brillante */
+}
+
+h1 {
+    color: #00BFFF; /* Blu brillante */
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Stili per il contenuto principale */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 72px); /* Altezza della viewport meno l'altezza dell'intestazione */
+    padding: 20px;
+    position: relative; /* Per posizionare la linea di separazione */
+}
+
+/* Stili per la sezione del contenuto */
+.content {
+    text-align: center;
+    position: relative; /* Per posizionare la linea di separazione */
+}
+
+/* Stili per la descrizione sopra i pulsanti */
+.description {
+    font-size: 1.5em;
+    margin: 20px 0; /* Spazio sopra e sotto il testo */
+}
+
+/* Stili per la descrizione sotto la linea */
+.social-description {
+    font-size: 1.5em;
+    margin-top: 20px; /* Spazio sopra il testo */
+    margin-bottom: 20px; /* Spazio sotto il testo */
+}
+
+/* Stili per il contenitore dei pulsanti */
+.button-container {
+    margin-top: 20px;
+}
+
+/* Stili per i pulsanti */
+button {
+    background-color: #00BFFF; /* Blu brillante */
+    color: #121212; /* Testo nero scuro */
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px; /* Bordo arrotondato */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombra normale */
+}
+
+/* Effetto hover per i pulsanti */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.8); /* Bagliore blu esterno */
+}
+
+/* Effetto focus per i pulsanti */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 191, 255, 0.5);
+}
+
+/* Stili per la linea orizzontale che si estende per tutta la larghezza dello schermo */
+.line-container {
+    position: relative; /* Posizionamento relativo per mantenere la linea nel flusso del layout */
+    width: 100%; /* Larghezza completa del contenitore */
+}
+
+.full-width-line {
+    border: 0;
+    border-top: 2px solid #00BFFF; /* Linea blu brillante */
+    width: 100%; /* Estende la linea per tutta la larghezza dello schermo */
+    margin-top: 40px; /* Spazio sopra la linea per distanziarla dai pulsanti */
+}
+
+/* Stili per il contenitore dei pulsanti social */
+.social-button-container {
+    margin-top: 20px; /* Spazio sopra i pulsanti social */
+    display: flex; /* Utilizza il layout flexbox per disporre i pulsanti orizzontalmente */
+    justify-content: center; /* Centra i pulsanti orizzontalmente */
+    gap: 10px; /* Spazio tra i pulsanti */
+}
+
+/* Stili per i pulsanti social */
+.socialButton {
+    background-color: #00BFFF; /* Blu brillante */
+    color: #121212; /* Testo nero scuro */
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px; /* Bordo arrotondato */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombra normale */
+}
+
+/* Effetto hover per i pulsanti social */
+.socialButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.8); /* Bagliore blu esterno */
+}
+
+/* Effetto focus per i pulsanti social */
+.socialButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 191, 255, 0.5);
+}
+
+/* Stili per il footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1E1E1E; /* Nero leggermente più chiaro */
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Disposizione verticale */
+    align-items: center; /* Centro il contenuto */
+    justify-content: center; /* Centra il contenuto */
+}
+
+/* Stili per il pulsante di cambio tema */
+#themeButton {
+    background-color: #00BFFF; /* Blu brillante */
+    color: #121212; /* Testo nero scuro */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px; /* Bordo arrotondato */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombra normale */
+}
+
+/* Effetto hover per il pulsante di cambio tema */
+#themeButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.8); /* Bagliore blu esterno */
+}
+
+/* Effetto focus per il pulsante di cambio tema */
+#themeButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 191, 255, 0.5);
+}
+
+/* Tema chiaro */
+body.light-theme {
+    background-color: #FFFFFF; /* Sfondo bianco per il tema chiaro */
+    color: #121212; /* Testo nero scuro */
+}
+
+/* Tema chiaro - Header */
+body.light-theme header {
+    background-color: #F0F0F0; /* Bianco leggermente grigio */
+}
+
+/* Tema chiaro - Pulsanti */
+body.light-theme button {
+    background-color: #1E90FF; /* Blu scuro per il tema chiaro */
+    color: #FFFFFF; /* Testo bianco */
+}
+
+/* Tema chiaro - Linea orizzontale */
+body.light-theme .full-width-line {
+    border-top: 2px solid #1E90FF; /* Linea blu scuro */
+}
+
+/* Tema chiaro - Pulsanti social */
+body.light-theme .socialButton {
+    background-color: #1E90FF; /* Blu scuro */
+    color: #FFFFFF; /* Testo bianco */
+}
+
+/* Tema chiaro - Footer */
+body.light-theme footer {
+    background-color: #F0F0F0; /* Bianco leggermente grigio */
+    color: #121212; /* Testo nero scuro */
+}
+
+/* Tema scuro - Descrizione Games */
+body.dark-theme .description {
+    color: #FFFFFF; /* Testo bianco per "Games" nel tema scuro */
+}
+
+/* Tema scuro - Descrizione Social */
+body.dark-theme .social-description {
+    color: #FFFFFF; /* Testo bianco per "Social" nel tema scuro */
+}
